@@ -1,0 +1,174 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+body * {
+    font-family: 'inter', sans-serif;
+    line-height: 160%;
+}
+
+body {
+    background-image: url(https://img.freepik.com/fotos-gratis/fundo-azul-do-gradiente-de-luxo-abstrato-liso-azul-escuro-com-vinheta-preta-studio-banner_1258-52393.jpg?w=740&t=st=1664913628~exp=1664914228~hmac=af4f1e369de34e9e9edf0b9a1e2a532c66c1e98dc417542f27b36876e5d153dc);
+    background-position: top center;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-color: #051019;
+}
+header img{
+    width: 110px;
+    border-radius: 50%;
+    
+     
+}
+header{
+    padding-top: 72px;
+    height: calc(120px+32px);
+    
+}
+header div{
+    width: 120px;
+    margin: auto;
+    background-image: linear-gradient(90deg,#9572fc 0%,#43e7ad 50.52%,#e2d45c 100%);
+    
+    border-radius: 50%;
+    
+    display: flex;
+    padding: 4px;
+
+    transition: transform .3s;
+
+    animation: fromTop 0.4s .2s backwards;
+    
+}
+
+header div:hover{
+    transform: scale(1.9);
+}
+
+main {
+    max-width: 580px;
+    width: 90%;
+    margin:70px calc(100% - 89.9%);
+    display: grid;
+    gap: 24px;
+    
+}
+
+section {
+    color:white;
+    background-image:linear-gradient(90deg, #9572fc 0%,#43e7ad 50.52%,#e2d45c 100%);
+    padding-top: 4px;
+    border-radius: 10px;
+    
+}
+section div{
+    background-color: #2A2634 ;
+    padding: 24px 32px 32px 32px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    
+}
+h1{
+    margin: 30px 0;
+}
+
+div .Container__img{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+}
+.Container__img .filhote__img{
+    width: 49%;
+}
+div .rabicho{
+    margin-top: 5%;
+    width: 10%;
+    flex-direction: row;
+    justify-content: space-between;
+}
+div .rabicho:hover{
+    margin-top: 5%;
+    width: 11%;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+section h2 {
+    letter-spacing: -0.47px;
+}
+
+section p {
+     
+    letter-spacing: -0.18px;
+    color: #A1A1AA;
+}
+section ul {
+    display: flex;
+    gap: 16px;
+    margin-top: 24px;
+    flex-wrap: wrap;
+}
+section ul li{
+    transition: transform .3s;
+}
+section ul li:hover{
+    transform: scale(1.1);
+}
+main section{
+    animation: fromBottom .7s backwards;
+}
+
+main section:nth-child(1){
+    animation-delay: 0s ;
+}
+
+main section:nth-child(2){
+    animation-delay: .4s ;
+}
+
+main section:nth-child(3){
+    animation-delay: .8s;
+}
+.game-list img{
+    width: 110px;
+    border-radius: 40px;
+}
+.channel-list img{
+    border-radius: 50%;
+    width: 70px;
+    border: 1px solid #443e54;
+}
+
+@keyframes fromTop {
+    from{
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fromBottom {
+    from{
+        opacity: 0;
+        transform: translatex(-30px);
+    }
+    to{
+        opacity: 1;
+        transform: translatex(0);
+    
+
+    }
+}

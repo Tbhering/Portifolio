@@ -1,0 +1,6 @@
+.sobre__introducao {
+    background-image: linear-gradient(black, gray, white);
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+}
